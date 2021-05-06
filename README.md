@@ -26,3 +26,5 @@ export default function App() {
   );
 }
 ```
+
+Experienced React developers probably already noticed that we have in the dependency array of the useEffect hook the function incrementCount. Actually, it might not have been necessary to include it here, but it is considered a good practice to always fill the dependency array with all variables (and functions) that are used in the useEffect hook.
