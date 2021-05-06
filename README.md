@@ -17,7 +17,7 @@ export default function App() {
     }, [1000]);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [tick]);
 
   return (
     <div className="App">
