@@ -12,10 +12,12 @@ export default function App() {
   };
 
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       tick();
     }, [1000]);
-  }, []);
+
+    return () => clearTimeout(timer);
+  }, [tick]);
 
   return (
     <div className="App">
@@ -23,4 +25,5 @@ export default function App() {
     </div>
   );
 }
+
 ```
