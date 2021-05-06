@@ -57,3 +57,7 @@ export default function App() {
   );
 }
 ```
+
+**`useCallback` will return a memoized version of the callback that only changes if one of the inputs has changed.**
+
+**React Hook `useCallback` does nothing when called with only `one` argument. Did you forget to pass an array of dependencies? (react-hooks/exhaustive-deps)**
